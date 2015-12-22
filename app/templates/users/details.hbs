@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-lg-6">
+        <div class="form-group">
+            <label>Data adaugare</label>
+            <input type="text" value="{{model.created_at}}" class="form-control m-wrap span12" placeholder="Data adaugare" data-field="created_at" readonly="readonly" />
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="form-group">
+            <label>Data update</label>
+            <input type="text" value="{{model.updated_at}}" class="form-control m-wrap span12" placeholder="Data update" data-field="updated_at" readonly="readonly" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="form-group">
+            <label>Nume</label>
+            {{input type="text" value=model.firstName class="form-control m-wrap span12" placeholder="Nume" autocomplete="off" required="required"}}
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="form-group">
+            <label>Url</label>
+            {{input type="text" value=model.lastName class="form-control m-wrap span12" placeholder="Url" autocomplete="off" required="required"}}
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="form-group">
+            <label>Email</label>
+            {{input type="text" value=model.email class="form-control m-wrap span12" placeholder="Url" autocomplete="off" required="required"}}
+        </div>
+    </div>
+</div>
+
+
+{{outlet}}
